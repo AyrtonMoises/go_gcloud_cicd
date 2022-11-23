@@ -8,11 +8,11 @@ steps:
     - name: 'docker'
       args: ['exec','goapp','go','test']
 
-    # - name: 'docker'
-    #   args: ['push','gcr.io/amsousa95/go_gbuild_cicd:latest']
+    - name: 'docker'
+      args: ['push','gcr.io/amsousa95/go_gbuild_cicd:latest']
 
-    # - name: 'docker'
-    #   args: ['push','gcr.io/amsousa95/go_gbuild_cicd:$SHORT_SHA']
+    - name: 'docker'
+      args: ['push','gcr.io/amsousa95/go_gbuild_cicd:$SHORT_SHA']
 
-    # - name: 'gcr.io/cloud-builders/gcloud'
-    #   args: ['run','deploy','go-cloudrun','--image','gcr.io/amsousa95/go_gbuild_cicd:$SHORT_SHA','--region','us-central1','--platform','managed','--allow-unauthenticated']
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['run','deploy','go-cloudrun','--image','gcr.io/amsousa95/go_gbuild_cicd:$SHORT_SHA','--region','us-central1','--platform','managed','--allow-unauthenticated']
