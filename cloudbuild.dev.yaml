@@ -1,6 +1,6 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build','-t','gcr.io/direct-tribute-368812/go_gbuild_cicd:latest', '-t', 'gcr.io/fullcycle-exemplos/live-ci-cd:$SHORT_SHA','.']
+      args: ['build','-t','gcr.io/direct-tribute-368812/go_gbuild_cicd:latest', '-t', 'gcr.io/direct-tribute-368812/go_gbuild_cicd:$SHORT_SHA','.']
 
     - name: 'docker'
       args: ['run','-d','--name','goapp','gcr.io/direct-tribute-368812/go_gbuild_cicd:latest']
