@@ -9,6 +9,6 @@ e escolher opcao para arquivo especifico (onde um sera pra prod e outro pra dev)
 # Git Boas práticas
 - Criado no repositorio uma rule para o branch master para fazer o merge
 somente quando aprovado usando:
-Settings > Branches > Require status check to pass before merging >
+-Settings > Branches > Require status check to pass before merging >
 Require branches to be up to date before merging > Selecionar gatilho criado no gbuild
-para o master
+para o branch development
