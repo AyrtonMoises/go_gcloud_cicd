@@ -1,8 +1,8 @@
 
 # GCloud Build CI/CD para GCloud Run
 
-
 ## Habilitando acesso do GCloud Build ao GCloud Run para implantar projeto  
+
 ```
 gcloud run services add-iam-policy-binding [CLOUD_RUN_SERVICE_NAME] \ 
   --member=serviceAccount:[CLOUD BUILD SERVICE ACCOUNT EMAIL] \
