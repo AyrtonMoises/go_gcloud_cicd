@@ -2,11 +2,6 @@
 # GCloud Build CI/CD para GCloud Run
 
 ## GCloud Build
-- Criar gatilho vinculado a repositorio para observar as alterações
-- Possivel marcar somente ramificao X para acionar gatilho
-- Interessante criar um gatilho para master e outro pra dev(com ramificacao invertida da branch),e escolher para dev a opcao para arquivo especifico (onde um sera pra prod e outro pra dev)
-- No menu Historico e possivel acompanhar o status do pipeline
-- Se der erro de permissões para o GBuild acessar o GRun
 ```
 gcloud run services add-iam-policy-binding [CLOUD_RUN_SERVICE_NAME] \ 
   --member=serviceAccount:[CLOUD BUILD SERVICE ACCOUNT EMAIL] \

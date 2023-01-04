@@ -7,7 +7,7 @@ import (
 )
 
 func home(w http.ResponseWriter, r *http.Request){
-	fmt.Fprintf(w, "<h1>I am Web App in Go</h1>")
+	fmt.Fprintf(w, "<h1>I am Web App in Go in 2023</h1>")
 }
 
 func main(){
